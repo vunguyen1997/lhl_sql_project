@@ -1,13 +1,13 @@
-** What issues will you address?  
+**1. What issues will you address?**  
 - Missing or Null Value  
 - Placeholder and Invalid Value  
 
-** Solution:  
+**2. Solution:**  
 - Relace placeholder values in city and country  
 - Fill missing numeric fields with 0 for calculation consistency  
 - Handle empty and other NULL text fields by labeling them "N/A"  
 
-** Queries:
+**3. Queries:**
 ```sql
 -- 1. Standardize placeholder values
 
