@@ -6,7 +6,10 @@ SQL Queries:
 ```sql
 
 -- List individual transaction records by city and country, ordered by highest revenue
-SELECT city, country, transactionrevenue
+SELECT
+  city,
+  country,
+  transactionrevenue
 FROM all_sessions
 GROUP BY city, country, transactionrevenue
 ORDER BY transactionrevenue DESC 
@@ -29,8 +32,10 @@ SQL Queries:
 ```sql
 
 -- Calculate the average number of products ordered per session in each city and country
-SELECT city, country, 
-ROUND(AVG(CAST(productquantity AS numeric)), 2) AS avg_products_ordered
+SELECT
+  city,
+  country, 
+  ROUND(AVG(CAST(productquantity AS numeric)), 2) AS avg_products_ordered
 FROM all_sessions
 GROUP BY city, country
 ORDER BY avg_products_ordered DESC;
@@ -49,8 +54,11 @@ SQL Queries:
 ```sql
 
 -- Count how many times each product category was ordered in each city and country
-SELECT city, country, v2productcategory AS product_category, 
-COUNT(*) AS order_count
+SELECT
+  city,
+  country,
+  v2productcategory AS product_category, 
+  COUNT(*) AS order_count
 FROM all_sessions
 GROUP BY city, country, product_category
 ORDER BY order_count DESC;
@@ -103,8 +111,10 @@ SQL Queries:
 ```sql
 
 -- Calculate total transaction revenue by city and country, ordered from highest to lowest
-SELECT city, country,
-SUM(CAST(totaltransactionrevenue AS numeric)) AS total_revenue
+SELECT
+  city,
+  country,
+  SUM(CAST(totaltransactionrevenue AS numeric)) AS total_revenue
 FROM all_sessions
 GROUP BY city, country
 ORDER BY total_revenue DESC;
