@@ -9,9 +9,9 @@
 
 -	Step 2: Clean the dataset by replacing placeholder values in city and country, and handling NULLs in key numeric and text fields.
 
--	Step 3: Conduct SQL-based analysis to answer questions about top-selling products, marketing channel performance, and average user behavior by region.
+-	Step 3: Conduct SQL-based analysis to answer questions about top-selling products, highest revenue city and country, and average user behavior by region.
 
--	Step 4: Developed additional questions using the available dataset, such as unique visitor behavior and product views. Executed the queries and provided conclusions to support exploratory insights.
+-	Step 4: Developed additional questions using the available dataset, such as marketing channel performance, unique visitor behavior and product views. Executed the queries and provided conclusions to support exploratory insights.
 
 -	Step 5: Created an Entity Relationship Diagram (ERD) in pgAdmin to visualize table structure and relationships within the ecommerce database.
 
